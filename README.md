@@ -1,4 +1,4 @@
-# 제주도 버스 이용 관광객 예측 프로젝트
+# 제주도 대중교통 이용 관광객 예측 프로젝트
 
 
 **[뱃지나 프로젝트에 관한 이미지들이 이 위치에 들어가면 좋습니다]**  
@@ -48,7 +48,7 @@ Add additional notes about how to deploy this on a live system / 라이브 시�
 
 ## Built With / 누구랑 만들었나요?
 
-* [이름](링크) - 무엇 무엇을 했어요
+* [JeonghyunKo](링크) - 무엇 무엇을 했어요
 * [Name](Link) - Create README.md
 
 ## Contributiong / 기여
