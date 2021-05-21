@@ -26,7 +26,8 @@ pip install pydeck
 
 ## File list 
 
-- jeju_visualization_map : pydeck을 이용한 제주도 지역별 버스 이용량 시각화  
+-  jeju_datahub_api : 제주데이터허브 API 이용하기 
+-  jeju_visualization_map : pydeck을 이용한 제주도 지역별 버스 이용량 시각화  
 
 ### 테스트는 이런 식으로 동작합니다
 
