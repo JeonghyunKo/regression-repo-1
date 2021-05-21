@@ -24,9 +24,9 @@ One Paragraph of project description goes here / 프로젝트의 전반적인 �
 pip install pydeck
 ```
 
-## Running the tests / 테스트의 실행
+## File list 
 
-어떻게 테스트가 이 시스템에서 돌아가는지에 대한 설명을 합니다
+- jeju_visualization_map : pydeck을 이용한 제주도 지역별 버스 이용량 시각화  
 
 ### 테스트는 이런 식으로 동작합니다
 
