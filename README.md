@@ -1,4 +1,4 @@
-# 제주도 버스 이용 관광객 예측 프로젝트
+# 제주도 대중교통 이용 관광객 예측 프로젝트
 
 
 **[뱃지나 프로젝트에 관한 이미지들이 이 위치에 들어가면 좋습니다]**  
@@ -24,9 +24,10 @@ One Paragraph of project description goes here / 프로젝트의 전반적인 �
 pip install pydeck
 ```
 
-## Running the tests / 테스트의 실행
+## File list 
 
-어떻게 테스트가 이 시스템에서 돌아가는지에 대한 설명을 합니다
+-  jeju_datahub_api : 제주데이터허브 API 이용하기 
+-  jeju_visualization_map : pydeck을 이용한 제주도 지역별 버스 이용량 시각화  
 
 ### 테스트는 이런 식으로 동작합니다
 
@@ -48,7 +49,7 @@ Add additional notes about how to deploy this on a live system / 라이브 시�
 
 ## Built With / 누구랑 만들었나요?
 
-* [이름](링크) - 무엇 무엇을 했어요
+* [JeonghyunKo](링크) - 무엇 무엇을 했어요
 * [Name](Link) - Create README.md
 
 ## Contributiong / 기여
