@@ -13,7 +13,7 @@ One Paragraph of project description goes here / 프로젝트의 전반적인 �
 아래 사항들이 설치가 되어있어야 합니다.
 
 ```
-예시
+pip install pydeck
 ```
 
 ### Installing / 설치
@@ -21,40 +21,24 @@ One Paragraph of project description goes here / 프로젝트의 전반적인 �
 아래 사항들로 현 프로젝트에 관한 모듈들을 설치할 수 있습니다.
 
 ```
-pip install pydeck
+import JejuRegion as JR
 ```
 
 ## File list 
 
+-  JejuRegion.py : 권역 그룹핑을 위한 모듈 
 -  jeju_datahub_api : 제주데이터허브 API 이용하기 
 -  jeju_visualization_map : pydeck을 이용한 제주도 지역별 버스 이용량 시각화  
+-  df_regression.csv : regression 용 데이터프레임 파일
+-  jeju_clustering.ipynb : 버스 이용객을 대상으로 한 kmeans clustering
+-  jeju_regression_part2.ipynb : 회귀분석 
 
-### 테스트는 이런 식으로 동작합니다
-
-왜 이렇게 동작하는지, 설명합니다
-
-```
-예시
-```
-
-### 테스트는 이런 식으로 작성하시면 됩니다
-
-```
-예시
-```
-
-## Deployment / 배포
-
-Add additional notes about how to deploy this on a live system / 라이브 시스템을 배포하는 방법
 
 ## Built With / 누구랑 만들었나요?
 
-* [JeonghyunKo](링크) - 무엇 무엇을 했어요
+* [정현](https://github.com/JeonghyunKo) - 파이덱 시각화 / 회귀분석 / 다스크
 * [Name](Link) - Create README.md
 
-## Contributiong / 기여
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us. / [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) 를 읽고 이에 맞추어 pull request 를 해주세요.
 
 ## License / 라이센스
 
