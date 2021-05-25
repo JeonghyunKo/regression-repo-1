@@ -1,5 +1,8 @@
 # 제주도 대중교통 이용 관광객 예측 프로젝트
-https://images.unsplash.com/photo-1609766418204-94aae0ecfdfc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1780&q=80![image](https://user-images.githubusercontent.com/80465347/119298247-991f9700-bc97-11eb-8cf1-516e1a4e6400.png)
+
+
+![jaemin-don-7ZlXsihxD2c-unsplash](https://user-images.githubusercontent.com/80465347/119299360-bb1a1900-bc99-11eb-908b-789de1220f89.jpg)
+
 
 제주도를 찾는 관광객들이 선택하는 주요 교통수단은 단연 렌트카이지만, (특히 코로나 19의 여파로) 제주도가 점점 더 각광받는 관광지로 부상하면서 대중교통의 이용 또한 증가하고 있습니다. 
 이에 대중교통을 이용하는 관광객의 수를 예측하여 관광지 주변 상권이나 Public Mobile 업체들이 활용할 수 있는 데이터를 만들고자 하였습니다. 
@@ -40,8 +43,13 @@ https://images.unsplash.com/photo-1609766418204-94aae0ecfdfc?ixid=MnwxMjA3fDB8MH
 
 ## Contributors
 
+<<<<<<< HEAD
 * [정현](https://data-ducky.tistory.com) - 파이덱 시각화 / 회귀분석 / 다스크
 * [재훈](Link) - ## please write here
+=======
+* [정현](https://github.com/JeonghyunKo) - 파이덱 시각화 / 회귀분석 / 다스크
+* [재훈](https://github.com/jayz0417) - 데이터 전처리 / EDA
+>>>>>>> f1c71e2c2f5b371ba959aa1d92e71fdbe848bd16
 
 ## What We Learned, and more... 
 
