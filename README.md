@@ -4,27 +4,31 @@ https://images.unsplash.com/photo-1609766418204-94aae0ecfdfc?ixid=MnwxMjA3fDB8MH
 제주도를 찾는 관광객들이 선택하는 주요 교통수단은 단연 렌트카이지만, (특히 코로나 19의 여파로) 제주도가 점점 더 각광받는 관광지로 부상하면서 대중교통의 이용 또한 증가하고 있습니다. 
 이에 대중교통을 이용하는 관광객의 수를 예측하여 관광지 주변 상권이나 Public Mobile 업체들이 활용할 수 있는 데이터를 만들고자 하였습니다. 
 
-## Getting Started / 어떻게 시작하나요?
+## Project Summary 
+### 목적 
+제주 국제 공항 정류장에서 탑승한 탑승객의 수로 대중교통을 이용하는 관광객 수 예측하기 
 
-이 곳에서 설치에 관련된 이야기를 해주시면 좋습니다.
+### 결과
+먼저 데이터상 버스 이용객이 도민인지, 관광객인지를 확실히 알 수 없어 관광지에서 하차하는 인원은 대체로 관광객일 것이라는 가정 하에 권역별 그룹핑을 진행하였습니다. 그러나 권역 간 이용량 분포에서 차이점이 뚜렷하게 드러나지 않았으며, 회귀분석 결과 설명력 또한 0.2 정도로 높지 않았습니다. 이에 접근 방향을 바꾸어 Kmeans clustering을 통해 탑승객이 도민인지 관광객인지를 구분하고자 시도하였습니다. 그 결과 클러스터 간 이용기간 및 횟수, 그리고 주 이용 정류장의 차이가 뚜렷하게 드러나 도민과 관광객의 구분에 성공하였다고 판단하였으며, 관광객으로 추정되는 클러스터의 이용량을 구하여 회귀분석을 진행하자 설명력이 0.6 이상으로 올라가는 결과를 얻었습니다.     
 
-### Prerequisites / 선행 조건
+### 데이터
 
-아래 사항들이 설치가 되어있어야 합니다.
+- 버스 승객별 이용 현황 (2018.07-2019.12) / 제주데이터허브
+- 해당 기간의 일별 날씨 데이터 / 기상청 기상자료개방포털
 
-```
-pip install pydeck
-```
+### 진행순서 
 
-### Installing / 설치
+- EDA
+- 권역별 그룹핑에 기반한 회귀분석 
+- Kmeans Clustering : 탑승객이 관광객인지 도민인지 구분하기 
+- 승객 클러스터링에 기반한 회귀분석 
 
-아래 사항들로 현 프로젝트에 관한 모듈들을 설치할 수 있습니다.
+### 주요 분석 기법 및 사용 툴 
 
-```
-import JejuRegion as JR
-```
+- OLS, Kmeans clustering
+- [Pydeck]
 
-## File list 
+## File List 
 
 -  JejuRegion.py : 권역 그룹핑을 위한 모듈 
 -  jeju_datahub_api : 제주데이터허브 API 이용하기 
@@ -34,20 +38,23 @@ import JejuRegion as JR
 -  jeju_regression_part2.ipynb : 회귀분석 
 
 
-## Built With / 누구랑 만들었나요?
+## Contributors
 
-* [정현](https://github.com/JeonghyunKo) - 파이덱 시각화 / 회귀분석 / 다스크
+* [정현](https://data-ducky.tistory.com) - 파이덱 시각화 / 회귀분석 / 다스크
 * [재훈](Link) - ## please write here
 
+## What We Learned, and more... 
 
-## License / 라이센스
+- DASK를 사용하면서 필요한 데이터만 가져와서 처리하거나, 최대한 간결하게 작동할 수 있는 코드를 작성하는 등 작업 효율에 대한 고민을 깊게 할 수 있었습니다. 
+- 추후 제주 지역에서 일레클, ZET와 같은 공유 모빌리티 / 라스트마일 서비스 업체들의 적절한 정류장 위치 선정을 위한 이용자 수 예측이나, 가동률 예측 등 대중교통 이용 관광객 수를 이용한 심화된 프로젝트를 진행해보고 싶습니다.  
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://gist.github.com/PurpleBooth/LICENSE.md) file for details / 이 프로젝트는 MIT 라이센스로 라이센스가 부여되어 있습니다. 자세한 내용은 LICENSE.md 파일을 참고하세요.
+## License 
 
-## Acknowledgments / 감사의 말
+This project is licensed under the MIT License - see the [LICENSE.md](https://gist.github.com/PurpleBooth/LICENSE.md) file for details 
+
+## Acknowledgments 
 
 * [Flycode77](https://github.com/FLY-CODE77) /  부족한 질문에도 항상 성실하게 알려주셔서 감사드립니다.  
 * [Radajin](https://github.com/radajin) / DASK-KING
 * 제주데이터허브, 제주관광협회 / 갑작스러웠던 요청임에도 흔쾌히 데이터를 제공해주셔서 감사드립니다. 
-
 * and [PinkWink](https://github.com/PinkWink) / Kmeans Clustering 제안으로 꽉 막혀있던 프로젝트의 돌파구를 제시하셨습니다.  
