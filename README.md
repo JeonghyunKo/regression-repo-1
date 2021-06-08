@@ -45,7 +45,7 @@
 ## 3. Contributors
 
 * [정현](https://data-ducky.tistory.com) - 파이덱 시각화 / 회귀분석 / 다스크
-* [재훈](Link) - ## please write here
+* [재훈](https://github.com/jayz0417) - 데이터 전처리 / EDA
 
 ## 4. What We Learned, and more... 
 
